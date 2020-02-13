@@ -9,7 +9,7 @@ router.all('/*',(req,res,next)=>{
 
 router.get('/',(req,res)=>{
     
-    res.render('admin/post',{
+    res.render('admin/posts/posts',{
         title:'All post'
     })
 
@@ -17,7 +17,7 @@ router.get('/',(req,res)=>{
 
 router.get('/create',(req,res)=>{
     
-    res.render('admin/create-post',{
+    res.render('admin/posts/create-post',{
         title:'Create post'
     })
 });
